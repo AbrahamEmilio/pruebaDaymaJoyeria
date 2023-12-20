@@ -1,7 +1,10 @@
-body{
+html{
+    scroll-behavior: smooth;
+}
+
+*{
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 p{
@@ -13,6 +16,11 @@ h2{
     margin: 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 :root {
     --dark-color: #202020; 
     --white-color: white;
@@ -23,21 +31,21 @@ h2{
 .headerButton{
     font-size: 30px;
     text-decoration: none;
-    padding: 10px 30px;
-    background-color: var(--blue-color);
+    padding: 5px 30px;
     color: var(--dark-color);
     border: none;
     color: var(--white-color);
-}
-
-h1{
-    margin: 0px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    background: rgb(18,128,115);
+    background: linear-gradient(63deg, rgba(18,128,115,1) 0%, rgba(112,255,239,1) 100%);  
 }
 
 .logo{
     font-family: 'Playfair Display', serif;
     text-decoration: none;
     color: var(--dark-color);
+    letter-spacing: 5px;
 }
 
 .division{
@@ -50,7 +58,16 @@ h1{
 .menu{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 40px;
+}
+
+.menuButton{
+    color: var(--dark-color);
+    font-size: 18px;
+}
+
+.menuButton:hover{
+    text-decoration: underline;
 }
 
 .nav{
@@ -58,11 +75,12 @@ h1{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding: 30px 0px;
 }
 
 .headerContent{
     width: 100%;
-    padding: 150px 0;
+    padding: 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,68 +91,219 @@ h1{
     font-size: 120px;
     margin-bottom: 30px;
 }
+
 .aboutUs{
-    width: 100%;
+    width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding: 200px 0px;
-    gap: 30px;
+    margin: 0px auto;
+}
+
+.aboutUsTitle{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.aboutUsButton{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 2px 25px;
+    color: var(--dark-color);
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    background: rgb(18,128,115);
+    background: linear-gradient(63deg, rgba(18,128,115,1) 0%, rgba(112,255,239,1) 100%);  
+}
+
+.aboutUsDivision{
+    width: 100%;
+    border: 1px solid var(--dark-color);
+    opacity: 20%;
+    margin-bottom: 5px;
+}
+
+.aboutUsText{
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .services{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.servicesTitle{
+    font-size: 30px;
+}
+
+.servicesContainer{
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 200px 0;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 .servicesCard{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    width: 20%;
-    background-color: var(--blue-color);
-    border-radius: 20px;
-    padding: 10px 30px;
-    height: 300px;
+    text-align: center;
+    width: 18%;
+    border-radius: 30px;
+    padding: 20px 20px;
+    height: 400px;
+    background: rgb(18,128,115);
+    background: linear-gradient(63deg, rgba(18,128,115,1) 0%, rgba(112,255,239,1) 100%);  
+}
+
+.iconCard{
+    width: 80px;
+    margin-bottom: 40px;
+}
+
+.titleCard{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.cardDivision{
+    width: 40%;
+    border: 1px solid var(--white-color);
+    opacity: 20%;
+    margin-bottom: 10px;
+}
+
+
+.textCard{
+    color: var(--white-color);
 }
 
 .form{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 30%;
-    padding: 40px 30px;
+    width: 20%;
+    padding: 60px 30px;
     border-radius: 20px;
     margin: 0 auto;
     border: 1px solid var(--dark-color);
-    gap: 20px;
+    gap: 10px;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
+.formTitle{
+    font-size: 30px;
+}
+
+.formButton{
+    font-size: 20px;
+    text-decoration: none;
     width: 100%;
-    padding: 10px 30px 30px 30px;
+    color: var(--dark-color);
+    border: none;
+    color: var(--white-color);
+    padding: 3px 0px;
+    font-family: 'Playfair Display', serif;
+    background: rgb(18,128,115);
+    background: linear-gradient(63deg, rgba(18,128,115,1) 0%, rgba(112,255,239,1) 100%);  
 }
 
 .menuFooter{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.footerButton{
-    font-size: 15px;
-    text-decoration: none;
+.input{
+    padding: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    background-color: var(--blue-color);
-    color: var(--dark-color);
-    border: none;
-    color: var(--white-color);
-    padding: 5px 0px;
+    padding: 30px 0 100px 0;
 }
 
 .contact{
-    padding: 50px 0px;
+    padding: 100px 0px;
+}
+
+@media (max-width: 640px){
+
+    .nav{
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    .headerContent{
+        padding: 100px 0;
+    }
+
+    .headerTitle{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .headerButton{
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+
+    .aboutUs{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        padding: 100px 0px;
+    }
+
+    .aboutUsText{
+        text-align: center;
+    }
+
+    .aboutUsDivision{
+        width: 20%;
+        margin-bottom: 10px;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+        width: 100%;
+    }
+
+    .servicesContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    .servicesCard{
+        width: 50%;
+    }
+
+    .form{
+        width: 50%;
+    }
 }

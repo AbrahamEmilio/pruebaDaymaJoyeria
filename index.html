@@ -21,13 +21,13 @@
         <div>
             <ul class="menu">
                 <li>
-                    <p>About us</p>
+                    <a href="#aboutUs" class="menuButton">About us</a>
                 </li>
                 <li>
-                    <p>Services</p>
+                    <a href="#services" class="menuButton">Services</a>
                 </li>
                 <li>
-                    <p>Contact</p>
+                    <a href="#contact" class="menuButton">Contact</a>
                 </li>
             </ul>
         </div>
@@ -35,46 +35,50 @@
     <div class="division"></div>
     <header>
         <div class="headerContent">
-            <h2 class="headerTitle">Very Soon</h2>
+            <h2 class="headerTitle">Coming Soon</h2>
             <button class="headerButton" href="">Contact us</button>
         </div>
     </header>
     <div class="division"></div>
     <main>
-        <div class="aboutUs">
-            <div>
-                <h2>About us</h2>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Dolorem, reiciendis!</p>
-            </div>
+        <div id="aboutUs" class="aboutUs">
+                <h2 class="aboutUsTitle">About us</h2>
+                <div class="aboutUsDivision"></div>
+                <p class="aboutUsText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis nihil dicta debitis modi consectetur recusandae id eaque tenetur commodi.</p>
+                <button class="aboutUsButton">More</button>
         </div>
         <div class="division"></div>
-        <div class="services">
-            <div class="servicesCard">
-                <img src="" alt="">
-                <h3>Buy & Sell</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ut!</p>
-            </div>
-            <div class="servicesCard">
-                <img src="" alt="">
-                <h3>Restoration</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ut!</p>
-            </div>
-            <div class="servicesCard">
-                <img src="" alt="">
-                <h3>Jewelry Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ut!</p>
-            </div>
+        <div id="services" class="services">
+            <h2 class="servicesTitle">Our Services</h2>
+            <div class="servicesContainer">
+                <div class="servicesCard">
+                    <img class="iconCard" src="./styles/icons/icon-1.png" alt="">
+                    <h3 class="titleCard">Buy & Sell</h3>
+                    <div class="cardDivision"></div>
+                    <p class="textCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque ducimus in nemo blanditiis dolorum laudantium debitis exercitationem libero ipsa.</p>
+                </div>
+                <div class="servicesCard">
+                    <img class="iconCard" src="./styles/icons/icon-2.png" alt="">
+                    <h3 class="titleCard">Restoration</h3>
+                    <div class="cardDivision"></div>
+                    <p class="textCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque ducimus in nemo blanditiis dolorum laudantium debitis exercitationem libero ipsa.</p>
+                </div>
+                <div class="servicesCard">
+                    <img class="iconCard" src="./styles/icons/icon-3.png" alt="">
+                    <h3 class="titleCard">Jewelry Design</h3>
+                    <div class="cardDivision"></div>
+                    <p class="textCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque ducimus in nemo blanditiis dolorum laudantium debitis exercitationem libero ipsa.</p>
+                </div>
+            </div>    
         </div>
         <div class="division"></div>
-        <div class="contact">
+        <div id="contact" class="contact">
             <form class="form" action="">
-                <h2>Contact Us</h2>
-                <input name="" placeholder="Name" type="text">
-                <input name="" placeholder="Email" type="text">
-                <input name="" placeholder="Message" type="text">
-                <button class="footerButton" type="submit">Contact</button>
+                <h2 class="formTitle">Contact Us</h2>
+                <input class="input" name="" placeholder="Name" type="text">
+                <input class="input" name="" placeholder="Email" type="text">
+                <input class="input" name="" placeholder="Message" type="text">
+                <button class="formButton" type="submit">Contact</button>
             </form>
         </div>
     </main>
@@ -85,13 +89,13 @@
         </a>
         <ul class="menuFooter">
             <li>
-                <p>About us</p>
+                <a href="#aboutUs" class="menuButton">About us</a>
             </li>
             <li>
-                <p>Services</p>
+                <a href="#services" class="menuButton">Services</a>
             </li>
             <li>
-                <p>Contact</p>
+                <a href="#contact" class="menuButton">Contact</a>
             </li>
         </ul>
     </footer>
