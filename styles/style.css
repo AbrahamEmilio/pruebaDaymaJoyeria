@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+}
+
+:root {
+    --dark-color: #202020; 
+    --white-color: white;
+    --blue-color: #128073;
+    --blueLight-color: #70FFEF;
+}
+
+.headerButton{
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: var(--blue-color);
+    color: var(--dark-color);
+    border: none;
+    color: var(--white-color);
+}
+
+h1{
+    margin: 0px;
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.division{
+    width: 90%;
+    border: 1px solid var(--dark-color);
+    opacity: 20%;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.headerContent{
+    width: 100%;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitle{
+    font-size: 120px;
+    margin-bottom: 30px;
+}
+.aboutUs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+    gap: 30px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 200px 0;
+}
+
+.servicesCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+    background-color: var(--blue-color);
+    border-radius: 20px;
+    padding: 10px 30px;
+    height: 300px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    padding: 40px 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid var(--dark-color);
+    gap: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px 30px 30px;
+}
+
+.menuFooter{
+    list-style: none;
+}
+
+.footerButton{
+    font-size: 15px;
+    text-decoration: none;
+    width: 100%;
+    background-color: var(--blue-color);
+    color: var(--dark-color);
+    border: none;
+    color: var(--white-color);
+    padding: 5px 0px;
+}
+
+.contact{
+    padding: 50px 0px;
+}
